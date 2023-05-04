@@ -63,8 +63,11 @@ public class InfixPostFixMethods {
                 stack.pop();
             }else{
                 //if the succeeding symbol is another operator, a closing parenthesis, return an infix error
-                if (isOperator(infix.charAt(i+1)) || infix.charAt(i+1) == ')')
+
+                if (i == 0 || i == infix.length()-1 ||
+                        isOperator(infix.charAt(i+1)) || infix.charAt(i+1) == ')')
                     return "Infix Syntax Error!";
+
                 if (!operand.isEmpty()){
                     result += operand + " ";
                     operand = "";
