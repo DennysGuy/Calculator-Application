@@ -1,0 +1,5 @@
+- download the repository to your computer
+- download and install the most recent version of java https://www.oracle.com/java/technologies/downloads/
+- open the command prompt and navigate to the folder containing the repository
+- compile the project by typing in 'javac Calculator2.java' in the terminal
+- run the project by typing in 'java Calculator2' into the terminal
